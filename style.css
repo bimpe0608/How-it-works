@@ -144,8 +144,12 @@ body {
   position: absolute;
   z-index: 10;
   top: 30rem;
-  left: 10rem;
-  right: 10rem;
+  /* left: 10rem;
+  right: 10rem; */
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .video-frame > img {
@@ -169,6 +173,7 @@ hr {
 
 .footerSection1 {
   display: flex;
+  justify-content: space-between;
   padding: 50px;
 }
 
@@ -177,21 +182,24 @@ hr {
 .text1 {
   /* border: 3px solid salmon; */
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.text2 {
-  /* border: 3px solid slateblue; */
+/* .text2 {
+  border: 3px solid slateblue;
   width: 15%;
 }
 
 .text3 {
-  /* border: 3px solid saddlebrown; */
+  border: 3px solid saddlebrown;
   width: 15%;
-}
+} */
 
 .text4 {
   /* border: 3px solid sandybrown; */
-  width: 30%;
+  width: 25%;
 }
 
 .footerSection1 p:nth-child(1) {
@@ -213,6 +221,19 @@ hr {
   font-feature-settings: "salt" on, "liga" off;
   color: #d9dbe1;
   width: 60%;
+}
+
+.footer-details {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  /* border: 3px solid green; */
+}
+
+.footer-details > div {
+  width: 50%;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 
 .btn {
@@ -387,14 +408,13 @@ hr {
     width: 70%;
     padding: 2rem 1.5rem;
     margin-bottom: 13rem;
-    box-shadow: 2.30081px 11.5041px 23.0081px 1.15041px
-      rgba(221, 227, 255, 0.45);
-    border-radius: 20px;
-    position: absolute;
-    z-index: 10;
     top: 22rem;
-    left: 2.5rem;
-    right: 2.5rem;
+    /* left: 2.5rem;
+    right: 2.5rem; */
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .footerSection1 {
@@ -410,8 +430,9 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* border: 3px solid greenyellow; */
+    width: 100%;
   }
-
 
   .text1 p:nth-child(2) {
     width: 112%;
@@ -419,11 +440,14 @@ hr {
 
   .text1 {
     display: flex;
+    flex-direction: row;
+    width: 100%;
     justify-content: space-between;
+    /* border: 3px solid red; */
   }
 
   .text1 > div {
-    /* border: 2px solid red; */
+    /* border: 2px solid orange; */
   }
 
   .text1,
@@ -438,23 +462,85 @@ hr {
   }
 
   .btn {
-    width:40%;
+    width: 40%;
     gap: 7px;
     margin-top: 1rem;
   }
 
   .btn > button {
-    width: 10px;
-    height: 10px;
+    width: 1px;
+    height: 1px;
     padding: 0;
   }
-
 
   .text4 > div {
     width: 100%;
     text-align: center;
     /* border: 3px solid red; */
   }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .mainContainer {
+    width: 100%;
+  }
 
+  .nav {
+    padding: 1.5rem 2rem;
+  }
+
+  .nav > div {
+    width: auto;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: block;
+    margin-left: auto;
+  }
+
+  .textContent {
+    width: 100%;
+  }
+
+  .textContent > div {
+    width: 60%;
+    padding: 2rem 0 12rem 0;
+  }
+
+  .video-frame {
+    width: 63%;
+    padding: 3rem 4rem;
+    margin-bottom: 60rem;
+    top: 30rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text1 {
+    /* border: 3px solid salmon; */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer-details {
+    width: 30;
+    /* border: 3px solid pink; */
+  }
+
+  .text4 {
+    /* border: 3px solid sandybrown; */
+    width: 33%;
+  }
+
+  .footerSection1 {
+    padding: 1.25rem;
+  }
 }
